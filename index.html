@@ -6,80 +6,136 @@
     <title>Friendly Service Point – Hyderabad</title>
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; }
-        header { background: #0077cc; padding: 20px; text-align: center; color: #fff; }
-        h1 { margin: 0; }
-        .section { padding: 30px; background: #fff; margin: 15px; border-radius: 10px; }
-        .title { font-size: 24px; font-weight: bold; color: #333; margin-bottom: 10px; }
-        .service-box { background: #e6f3ff; padding: 15px; margin: 10px 0; border-radius: 8px; }
-        .contact { font-size: 20px; margin-top: 10px; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f7; }
+
+        /* Header */
+        .header {
+            background: url('https://i.imgur.com/9owK3eI.jpg') no-repeat center/cover;
+            height: 280px;
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .header h1 { font-size: 35px; margin: 0; text-shadow: 2px 2px 6px #000; }
+        .header p { font-size: 18px; margin-top: 10px; }
+
+        /* Sections */
+        .section {
+            background: #fff;
+            padding: 25px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0077cc;
+        }
+
+        /* Service Cards */
+        .service-box {
+            display: flex;
+            align-items: center;
+            background: #eef7ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .service-box img {
+            width: 70px; height: 70px; border-radius: 8px; margin-right: 15px;
+        }
+
+        /* Button */
         .btn {
-            display: inline-block;
             background: #0077cc;
             color: #fff;
             padding: 12px 20px;
             text-decoration: none;
+            display: inline-block;
             border-radius: 8px;
             margin-top: 10px;
         }
-        footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
 
-        /* WhatsApp Floating Button */
+        /* WhatsApp */
         .whatsapp {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
+            bottom: 20px; right: 20px;
+            background: #25d366;
             padding: 15px;
             border-radius: 50%;
-            font-size: 25px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
             text-align: center;
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
 
-<header>
+<!-- Header Image -->
+<div class="header">
     <h1>Friendly Service Point – Hyderabad</h1>
     <p>Washing Machine • Fridge • AC • Microwave Repair</p>
-</header>
-
-<div class="section">
-    <div class="title">📞 Call Us</div>
-    <p class="contact"><b>Mobile:</b> 8466868046</p>
-    <p><b>Address:</b> H.No.8-84/1, Near KCR Common, Ramanthapur, Hyderabad</p>
-    <a href="tel:8466868046" class="btn">Call Now</a>
 </div>
 
+<!-- Contact Section -->
+<div class="section">
+    <div class="title">📞 Contact Us</div>
+    <p><b>Mobile:</b> 8466868046</p>
+    <p><b>Address:</b> H.No.8-84/1, Near KCR Common, Ramanthapur, Hyderabad</p>
+    <a class="btn" href="tel:8466868046">Call Now</a>
+</div>
+
+<!-- Services Section -->
 <div class="section">
     <div class="title">🔧 Our Services</div>
 
-    <div class="service-box">Washing Machine Repair (All brands)</div>
-    <div class="service-box">Refrigerator / Fridge Repair</div>
-    <div class="service-box">AC Repair & Gas Filling</div>
-    <div class="service-box">Microwave Oven Repair</div>
-    <div class="service-box">Home Service Available</div>
+    <div class="service-box">
+        <img src="https://i.imgur.com/mYJbDPF.jpg">
+        Washing Machine Repair – All Brands
+    </div>
+
+    <div class="service-box">
+        <img src="https://i.imgur.com/cr8ZYzG.jpg">
+        Refrigerator / Fridge Repair
+    </div>
+
+    <div class="service-box">
+        <img src="https://i.imgur.com/EXb7bUe.jpg">
+        AC Repair & Gas Filling
+    </div>
+
+    <div class="service-box">
+        <img src="https://i.imgur.com/18pchfH.jpg">
+        Microwave Oven Repair
+    </div>
 </div>
 
+<!-- About Us Section -->
 <div class="section">
     <div class="title">👨‍🔧 About Us</div>
     <p>
-        We provide fast and professional home appliance repair services in Hyderabad.  
-        With expert technicians and same-day service, we ensure quick and reliable repair for all brands.
+        We provide fast, reliable, and affordable home appliance repair 
+        service in Hyderabad. Same-day service available with expert 
+        technicians for all brands.
     </p>
-    <p>✔ Affordable Charges<br>✔ Genuine Spare Parts<br>✔ Same Day Technician Visit</p>
+    <p>✔ Same Day Service<br>✔ Affordable Charges<br>✔ Genuine Spare Parts</p>
 </div>
 
+<!-- Booking Form Section -->
 <div class="section">
     <div class="title">📩 Book a Service</div>
+
     <form>
         <label>Name:</label><br>
         <input type="text" style="width:100%;padding:10px;"><br><br>
@@ -98,7 +154,7 @@
         <label>Problem Description:</label><br>
         <textarea style="width:100%;padding:10px;height:80px;"></textarea><br><br>
 
-        <button class="btn" type="submit">Submit</button>
+        <button class="btn">Submit</button>
     </form>
 </div>
 
@@ -106,7 +162,7 @@
     © 2025 Friendly Service Point – Hyderabad
 </footer>
 
-<!-- WhatsApp Button -->
+<!-- WhatsApp Floating Button -->
 <a class="whatsapp" href="https://wa.me/918466868046">💬</a>
 
 </body>
